@@ -14,7 +14,7 @@ public class DesafioJogoAdivinhacao {
         int tentativas = 10;
         boolean acertou = false;
 
-        System.out.println("🎯 Jogo da Adivinhação 🎯");
+        System.out.println(" Jogo da Adivinhação ");
         System.out.println("Tente adivinhar o número entre 0 e 100!");
         System.out.println("Você tem " + tentativas + " tentativas.\n");
 
@@ -23,7 +23,7 @@ public class DesafioJogoAdivinhacao {
             int palpite = entrada.nextInt();
 
             if (palpite == numeroSecreto) {
-                System.out.println("🎉 Parabéns! Você acertou o número " + numeroSecreto + "!");
+                System.out.println(" Parabéns! Você acertou o número " + numeroSecreto + "!");
                 acertou = true;
                 break;
             } else if (palpite > numeroSecreto) {
@@ -38,7 +38,7 @@ public class DesafioJogoAdivinhacao {
         }
 
         if (!acertou) {
-            System.out.println("😢 Suas tentativas acabaram! O número secreto era " + numeroSecreto + ".");
+            System.out.println(" Suas tentativas acabaram! O número secreto era " + numeroSecreto + ".");
         }
 
         entrada.close();
